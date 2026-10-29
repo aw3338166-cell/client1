@@ -27,9 +27,7 @@ jobs:
 
     - name: Build with Gradle
       run: gradle build
-      # If your files are zipped inside a subfolder in the repo, 
-      # you can change '.' below to that folder name, e.g., 'MinecraftAIBuild-Fabric-1.21.11'
-      working-directory: .
+      working-directory: MinecraftAIBuild-Fabric-1.21.11
 
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v4
